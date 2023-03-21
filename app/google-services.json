@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "920777997288",
+    "project_id": "letschat-app-pps",
+    "storage_bucket": "letschat-app-pps.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:920777997288:android:514ab926dce0bd7705025d",
+        "android_client_info": {
+          "package_name": "com.droidappproject.letschat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "920777997288-pin0k7ibdcna8mhe62o1orumdji3e8vk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCPvVJ49dhccApRbPkKedcKiclKWDAw9w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "920777997288-pin0k7ibdcna8mhe62o1orumdji3e8vk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
