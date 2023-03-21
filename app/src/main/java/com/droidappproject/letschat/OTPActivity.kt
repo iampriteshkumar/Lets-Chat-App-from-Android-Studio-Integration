@@ -31,7 +31,7 @@ class OTPActivity : AppCompatActivity() {
         dialog!!.setCancelable(false)
         dialog!!.show()
         auth = FirebaseAuth.getInstance()
-        supportActionBar!!.hide()
+        supportActionBar?.hide()
         val phoneNumber = intent.getStringExtra("phoneNumber")
         binding!!.phoneLble.text = "Verify $phoneNumber"
 

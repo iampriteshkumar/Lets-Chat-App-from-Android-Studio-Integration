@@ -67,6 +67,7 @@
                 android:itemBackground="#e7e7e7"
                 android:focusableInTouchMode="true"
                 app:OtpItemCount="6"
+                android:textSize="20sp"
                 android:paddingBottom="10dp"
                 app:OtpLineColor="#4574FD"
                 app:OtpViewType="line"
