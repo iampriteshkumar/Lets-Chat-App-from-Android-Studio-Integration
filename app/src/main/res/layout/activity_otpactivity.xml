@@ -16,7 +16,6 @@
         android:src="@drawable/getotp"
         android:scaleType="centerCrop"
         android:layout_marginTop="10dp"
-
         android:layout_width="250dp"
         android:layout_height="250dp"/>
 
@@ -37,6 +36,7 @@
         android:textColor="#656565"
         android:layout_width="match_parent"
         android:textStyle="normal"
+        android:layout_margin="8dp"
         android:layout_height="wrap_content"/>
 
     <androidx.cardview.widget.CardView
@@ -62,14 +62,16 @@
                 android:hint="otp"
                 android:labelFor="@id/otp_view"
                 android:layout_gravity="center"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="4dp"
                 android:inputType="number"
-                android:itemBackground="#e7e7e7"
+                android:itemBackground="#F5F5F5"
                 android:focusableInTouchMode="true"
                 app:OtpItemCount="6"
-                android:textSize="20sp"
-                android:paddingBottom="10dp"
-                app:OtpLineColor="#4574FD"
+                android:textSize="16sp"
+                android:textStyle="bold|normal"
+                android:paddingBottom="8dp"
+                app:OtpLineColor="#3F51B5"
+                app:OtpLineWidth="3dp"
                 app:OtpViewType="line"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
@@ -80,6 +82,8 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/background_shape"
                 android:backgroundTint="#4CAF50"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="4dp"
                 android:text="Continue"
                 android:textAllCaps="false"
                 android:textSize="16sp"
