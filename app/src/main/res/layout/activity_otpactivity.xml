@@ -6,38 +6,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center_horizontal"
     android:layout_gravity="center"
     android:background="#FEFEFE"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
     tools:context=".OTPActivity">
 
     <ImageView
-        android:src="@drawable/getotp"
-        android:scaleType="centerCrop"
-        android:layout_marginTop="10dp"
         android:layout_width="250dp"
-        android:layout_height="250dp"/>
+        android:layout_height="250dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/getotp" />
 
     <TextView
         android:id="@+id/phoneLble"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:text="Verify +912003154789"
         android:textAlignment="center"
-        android:textSize="25sp"
-        android:textStyle="bold|normal"
         android:textColor="#3F51B5"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:textSize="25sp"
+        android:textStyle="bold|normal" />
 
     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
         android:text="Enter the OTP code to Verify your Phone Number"
         android:textAlignment="center"
-        android:textSize="13sp"
         android:textColor="#656565"
-        android:layout_width="match_parent"
-        android:textStyle="normal"
-        android:layout_margin="8dp"
-        android:layout_height="wrap_content"/>
+        android:textSize="13sp"
+        android:textStyle="normal" />
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -59,31 +59,31 @@
 
             <com.mukesh.OtpView
                 android:id="@+id/otp_view"
-                android:hint="otp"
-                android:labelFor="@id/otp_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="4dp"
+                android:focusableInTouchMode="true"
+                android:hint="otp"
                 android:inputType="number"
                 android:itemBackground="#F5F5F5"
-                android:focusableInTouchMode="true"
-                app:OtpItemCount="6"
+                android:labelFor="@id/otp_view"
+                android:paddingBottom="8dp"
                 android:textSize="16sp"
                 android:textStyle="bold|normal"
-                android:paddingBottom="8dp"
+                app:OtpItemCount="6"
                 app:OtpLineColor="#3F51B5"
                 app:OtpLineWidth="3dp"
-                app:OtpViewType="line"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                app:OtpViewType="line" />
 
             <Button
                 android:id="@+id/continueBtn01"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/background_shape"
-                android:backgroundTint="#4CAF50"
                 android:layout_marginTop="8dp"
                 android:layout_marginBottom="4dp"
+                android:background="@drawable/background_shape"
+                android:backgroundTint="#4CAF50"
                 android:text="Continue"
                 android:textAllCaps="false"
                 android:textSize="16sp"

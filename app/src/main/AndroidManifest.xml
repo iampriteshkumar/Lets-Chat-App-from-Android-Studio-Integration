@@ -14,9 +14,9 @@
         <activity
             android:name=".SetupProfileActivity"
             android:exported="false" />
-        <activity
-            android:name=".ChatActivity"
-            android:exported="false" />
+<!--        <activity-->
+<!--            android:name=".ChatActivity"-->
+<!--            android:exported="false" />-->
         <activity
             android:name=".OTPActivity"
             android:exported="false" />
