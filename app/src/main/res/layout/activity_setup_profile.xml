@@ -13,7 +13,7 @@
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/imageView"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="72dp"
         android:src="@drawable/ic_avatar"
         android:layout_width="150dp"
         android:layout_height="150dp"/>
@@ -33,7 +33,7 @@
         android:textAlignment="center"
         android:textSize="12sp"
         android:textStyle="bold|normal"
-        android:textColor="#303030"
+        android:textColor="#606060"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
@@ -41,6 +41,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cardBackgroundColor="@color/white"
+        android:layout_marginTop="10dp"
         app:cardCornerRadius="8dp"
         app:cardElevation="10dp"
         app:cardUseCompatPadding="true">
