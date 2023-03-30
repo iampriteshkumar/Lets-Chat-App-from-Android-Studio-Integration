@@ -12,11 +12,13 @@
         android:theme="@style/Theme.LetsChat"
         tools:targetApi="31">
         <activity
-            android:name=".SetupProfileActivity"
+            android:name=".ChatActivity"
             android:exported="false" />
-<!--        <activity-->
-<!--            android:name=".ChatActivity"-->
-<!--            android:exported="false" />-->
+        <activity
+            android:name=".SetupProfileActivity"
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".ChatActivity" -->
+        <!-- android:exported="false" /> -->
         <activity
             android:name=".OTPActivity"
             android:exported="false" />
