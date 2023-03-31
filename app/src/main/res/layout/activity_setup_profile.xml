@@ -24,7 +24,7 @@
         android:layout_marginTop="20dp"
         android:textSize="24sp"
         android:textStyle="bold|normal"
-        android:textColor="#3F51B5"
+        android:textColor="#283593"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
