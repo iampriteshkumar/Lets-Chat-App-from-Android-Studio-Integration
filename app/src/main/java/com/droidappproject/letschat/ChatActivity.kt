@@ -119,7 +119,7 @@ class ChatActivity : AppCompatActivity() {
             database!!.reference.child("chats").child(receiverRoom!!)
                 .updateChildren(lastMsgObj)
             database!!.reference.child("chats").child(senderRoom!!)
-                .child("messages")
+                .child("message")
                 .child(randomKey!!)
                 .setValue(message).addOnSuccessListener {
                     database!!.reference.child("chats")
@@ -187,6 +187,7 @@ class ChatActivity : AppCompatActivity() {
                                     lastMsgObj["lastMsg"] = message.message!!
                                     lastMsgObj["lastMsgTime"] = date.time
                                     database!!.reference.child("chats")
+                                        .child(senderRoom!!)
                                         .updateChildren(lastMsgObj)
                                     database!!.reference.child("chats")
                                         .child(receiverRoom!!)
