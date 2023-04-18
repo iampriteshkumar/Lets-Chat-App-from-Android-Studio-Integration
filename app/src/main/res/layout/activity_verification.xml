@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:text="OTP Verification"
         android:textAlignment="center"
-        android:textColor="#036007"
+        android:textColor="#FFB74D"
         android:textSize="22sp"
         android:textStyle="bold" />
 
@@ -65,9 +65,9 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardBackgroundColor="@color/white"
+        app:cardBackgroundColor="@color/otpBack"
         app:cardCornerRadius="8dp"
-        app:cardElevation="10dp"
+        app:cardElevation="15dp"
         app:cardUseCompatPadding="true">
 
         <LinearLayout
@@ -75,7 +75,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="15dp"
-            android:background="@color/white"
+            android:background="@color/otpBack"
             android:gravity="center"
             android:orientation="vertical"
             android:padding="15dp">
@@ -101,8 +101,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/background_shape"
-                android:backgroundTint="#4CAF50"
+                android:backgroundTint="#43A047"
                 android:text="Continue"
+                android:textColor="@color/white"
                 android:textAllCaps="false"
                 android:textSize="16sp"
                 android:textStyle="bold|normal" />

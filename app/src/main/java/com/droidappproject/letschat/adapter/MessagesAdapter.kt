@@ -71,11 +71,11 @@ class MessagesAdapter(
                 val view: View = LayoutInflater.from(context).inflate(R.layout.delete_layout, null)
                 val binding: DeleteLayoutBinding = DeleteLayoutBinding.bind(view)
                 val dialog:AlertDialog = AlertDialog.Builder(context)
-                    .setTitle("Delete Message")
+                    .setTitle("Delete message?")
                     .setView(binding.getRoot())
                     .create()
                 binding.everyone.setOnClickListener{
-                    message.message = "This message is removed"
+                    message.message = "\uD83D\uDEAB This message was deleted."
                     message.messageId?.let { it1 ->
                         FirebaseDatabase.getInstance().reference
                             .child("chats")
@@ -133,7 +133,7 @@ class MessagesAdapter(
                     .setView(binding.getRoot())
                     .create()
                 binding.everyone.setOnClickListener{
-                    message.message = "This message is removed"
+                    message.message = "\uD83D\uDEAB This message was deleted."
                     message.messageId?.let { it1 ->
                         FirebaseDatabase.getInstance().reference.child("chats")
                             .child(senderRoom)

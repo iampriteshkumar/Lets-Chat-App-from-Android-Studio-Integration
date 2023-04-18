@@ -10,13 +10,27 @@
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
-        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorSecondaryVariant">#C38D40</item>
         <item name="colorOnSecondary">@color/black</item>
 
 <!--        changing status bar color-->
 
         <!-- Status bar color. -->
-        <item name="android:statusBarColor">#9E9E9E</item>
+        <item name="android:statusBarColor">#FFB74D</item>
         <!-- Customize your theme here. -->
     </style>
+
+<!--    Light theme colors-->
+
+    <item name="whtBlc" type="color">@color/white</item>
+    <item name="chatBack" type="color">@color/white</item>
+    <item name="msgBox" type="color">#e7e7e7</item>
+    <item name="inMsgBox" type="color">@color/white</item>
+    <item name="txtCol" type="color">@color/black</item>
+    <item name="sendBack" type="color">#FFD54F</item>
+    <item name="receiveBack" type="color">#B3E7E7E7</item>
+    <drawable name="proBack">@drawable/bgl</drawable>
+
+    <item name="otpBack" type="color">#FEFEFE</item>
+
 </resources>

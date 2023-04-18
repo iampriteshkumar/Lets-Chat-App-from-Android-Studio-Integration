@@ -53,7 +53,7 @@ class ChatActivity : AppCompatActivity() {
         val profile = intent.getStringExtra("image")
         binding!!.name.text = name
         Glide.with(this@ChatActivity).load(profile)
-            .placeholder(R.drawable.placeholder)
+            .placeholder(R.drawable.ic_avatar)
             .into(binding!!.profile01)
         binding!!.imageView2.setOnClickListener{ finish() }
         receiverUid = intent.getStringExtra("uid")

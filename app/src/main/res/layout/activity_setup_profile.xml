@@ -9,6 +9,7 @@
     android:orientation="vertical"
     android:layout_gravity="center"
     android:gravity="center_horizontal"
+    android:background="@color/whtBlc"
     tools:context=".SetupProfileActivity">
 
     <de.hdodenhof.circleimageview.CircleImageView
@@ -24,7 +25,7 @@
         android:layout_marginTop="20dp"
         android:textSize="24sp"
         android:textStyle="bold|normal"
-        android:textColor="#283593"
+        android:textColor="#FFB74D"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
@@ -33,14 +34,14 @@
         android:textAlignment="center"
         android:textSize="12sp"
         android:textStyle="bold|normal"
-        android:textColor="#606060"
+        android:textColor="#858585"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardBackgroundColor="@color/white"
+        app:cardBackgroundColor="@color/otpBack"
         android:layout_marginTop="10dp"
         app:cardCornerRadius="8dp"
         app:cardElevation="10dp"
@@ -51,7 +52,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="15dp"
-            android:background="@color/white"
+            android:background="@color/otpBack"
             android:gravity="center"
             android:orientation="vertical"
             android:padding="15dp">
@@ -77,8 +78,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/background_shape"
-                android:backgroundTint="#4CAF50"
+                android:backgroundTint="#43A047"
                 android:text="Setup Profile"
+                android:textColor="@color/white"
                 android:textAllCaps="false"
                 android:textSize="16sp"
                 android:textStyle="bold|normal" />

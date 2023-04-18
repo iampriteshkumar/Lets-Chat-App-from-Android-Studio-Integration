@@ -4,11 +4,11 @@
 
     <item>
         <shape>
-            <solid android:color="#283593"/>
+            <solid android:color="@color/sendBack"/>
             <corners
-                android:bottomLeftRadius="45dp"
-                android:topRightRadius="45dp"
-                android:topLeftRadius="45dp"/>
+                android:bottomLeftRadius="10dp"
+                android:topRightRadius="10dp"
+                android:topLeftRadius="10dp"/>
         </shape>
     </item>
 

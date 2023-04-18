@@ -4,11 +4,11 @@
 
     <item>
         <shape>
-            <solid android:color="#B3E7E7E7"/>
+            <solid android:color="@color/receiveBack"/>
             <corners
-                android:bottomRightRadius="45dp"
-                android:topRightRadius="45dp"
-                android:topLeftRadius="45dp"/>
+                android:bottomRightRadius="10dp"
+                android:topRightRadius="10dp"
+                android:topLeftRadius="10dp"/>
         </shape>
     </item>
 

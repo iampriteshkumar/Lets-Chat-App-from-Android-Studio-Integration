@@ -3,6 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_marginEnd="50dp"
     android:orientation="vertical"
     android:gravity="start"
     android:layout_gravity="start">
@@ -23,11 +24,11 @@
 
         <TextView
             android:id="@+id/message"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/app_name"
             android:textAlignment="textStart"
-            android:textColor="@color/black"
+            android:textColor="@color/txtCol"
             android:textSize="16sp"
             android:textStyle="bold|normal" />
 

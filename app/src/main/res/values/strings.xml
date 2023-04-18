@@ -1,4 +1,4 @@
 <resources>
-    <string name="app_name">Let\'s Chat</string>
+    <string name="app_name">LetsChat</string>
     <string name="profile_list_intro">Select a profile from your contact list to talk with them!</string>
 </resources>
