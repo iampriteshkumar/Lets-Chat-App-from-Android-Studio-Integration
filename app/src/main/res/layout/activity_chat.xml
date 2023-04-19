@@ -60,7 +60,7 @@
 
                 <TextView
                     android:id="@+id/status"
-                    android:text="online"
+                    android:text=""
                     android:textColor="@color/white"
                     android:textSize="14sp"
                     android:textAlignment="textStart"
@@ -80,7 +80,7 @@
         android:orientation="vertical"
         android:layout_below="@id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="65dp">
 
@@ -88,7 +88,7 @@
             android:id="@+id/recyclerView"
             android:visibility="visible"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="match_parent"/>
 
     </LinearLayout>
 
@@ -143,7 +143,7 @@
                         android:padding="5dp"
                         android:paddingStart="5dp"
                         android:paddingEnd="1dp"
-                        android:textColorHint="#AAAAAA"
+                        android:textColorHint="#858585"
                         android:textSize="15sp"
                         android:textStyle="bold"
                         tools:ignore="TouchTargetSizeCheck" />
@@ -155,7 +155,7 @@
                     android:id="@+id/attachment"
                     android:layout_weight="4"
                     android:padding="5dp"
-                    app:tint="#AAAAAA"
+                    app:tint="#858585"
                     android:src="@drawable/ic_attachment"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"/>
@@ -163,7 +163,7 @@
                     android:id="@+id/camera"
                     android:layout_weight="4"
                     android:padding="5dp"
-                    app:tint="#AAAAAA"
+                    app:tint="#858585"
                     android:src="@drawable/ic_camera"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"/>

@@ -23,14 +23,14 @@
 
     </style>
 
-    <!--    Light theme colors-->
+    <!--    Dark theme colors-->
 
     <item name="whtBlc" type="color">#333333</item>
     <item name="chatBack" type="color">#141414</item>
     <item name="msgBox" type="color">#1e1e1e</item>
     <item name="inMsgBox" type="color">#282828</item>
     <item name="txtCol" type="color">@color/white</item>
-    <item name="sendBack" type="color">#B3FFD54F</item>
+    <item name="sendBack" type="color">#AA8500</item>
     <item name="receiveBack" type="color">#33E7E7E7</item>
     <drawable name="proBack">@drawable/bgd</drawable>
 

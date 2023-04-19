@@ -29,12 +29,14 @@ class UserAdapter(var context:Context, var userList: ArrayList<User>):
 
         val user = userList[position]
         holder.binding.username.text = user.name
+        holder.binding.bio.text = user.bio
         Glide.with(context).load(user.profileImage)
             .placeholder(R.drawable.ic_avatar)
             .into(holder.binding.profile)
         holder.itemView.setOnClickListener{
             val intent = Intent(context, ChatActivity::class.java)
             intent.putExtra("name", user.name)
+            intent.putExtra("bio", user.bio)
             intent.putExtra("image", user.profileImage)
             intent.putExtra("uid", user.uid)
             context.startActivity(intent)

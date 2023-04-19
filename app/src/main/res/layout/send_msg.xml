@@ -15,12 +15,12 @@
         android:layout_margin="20dp"
         android:background="@drawable/send_drawable"
         android:orientation="horizontal"
-        android:paddingStart="15dp"
-        android:paddingLeft="15dp"
-        android:paddingTop="10dp"
-        android:paddingEnd="15dp"
-        android:paddingRight="15dp"
-        android:paddingBottom="10dp">
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp">
 
         <TextView
             android:id="@+id/message"
@@ -30,7 +30,7 @@
             android:textAlignment="textStart"
             android:textColor="@color/txtCol"
             android:textSize="16sp"
-            android:textStyle="bold|normal" />
+            android:textStyle="normal" />
 
     </LinearLayout>
 

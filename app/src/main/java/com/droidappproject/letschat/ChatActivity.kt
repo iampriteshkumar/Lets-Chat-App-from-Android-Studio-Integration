@@ -64,7 +64,8 @@ class ChatActivity : AppCompatActivity() {
                     if (snapshot.exists()) {
                         val status = snapshot.getValue(String::class.java)
                         if (status == "offline") {
-                            binding!!.status.visibility = View.GONE
+                            binding!!.status.setText(status)
+                            binding!!.status.visibility = View.VISIBLE
                         }
                         else {
                             binding!!.status.setText(status)

@@ -8,12 +8,13 @@
     xmlns:card_view="http://schemas.android.com/tools"
     app:cardCornerRadius="12dp"
     app:cardElevation="10dp"
+    android:layout_margin="20dp"
     app:cardUseCompatPadding="true"
     card_view:cardCornerRadius="5dp">
 
     <LinearLayout
         android:orientation="vertical"
-        android:padding="12dp"
+        android:padding="14dp"
         android:layout_margin="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
@@ -21,8 +22,9 @@
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/profile"
             android:src="@drawable/ic_avatar"
-            android:layout_width="120dp"
-            android:layout_height="120dp"/>
+            android:padding="6dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
 
         <LinearLayout
             android:orientation="vertical"
@@ -42,6 +44,7 @@
                 android:layout_height="wrap_content"/>
 
             <TextView
+                android:id="@+id/bio"
                 android:text="This is the user's about section"
                 android:textStyle="normal"
                 android:textAlignment="center"

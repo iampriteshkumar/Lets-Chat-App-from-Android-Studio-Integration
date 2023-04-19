@@ -46,8 +46,9 @@ class SetupProfileActivity : AppCompatActivity() {
         }
         binding!!.continueBtn02.setOnClickListener {
             val name: String = binding!!.nameBox.text.toString()
-            if (name.isEmpty()) {
-                binding!!.nameBox.setError("Please type a Name")
+            val bio: String = binding!!.bioBox.text.toString()
+            if (name.isEmpty() && bio.isEmpty()) {
+                binding!!.nameBox.setError("Please type a Name & Bio")
             }
             dialog?.show()
             if (selectedImage != null) {
@@ -60,7 +61,8 @@ class SetupProfileActivity : AppCompatActivity() {
                             val uid = auth!!.uid
                             val phone = auth!!.currentUser!!.phoneNumber
                             val name: String = binding!!.nameBox.text.toString()
-                            val user = User(uid, name, phone, imageUrl)
+                            val bio: String = binding!!.bioBox.text.toString()
+                            val user = User(uid, name, bio, phone, imageUrl)
                             database!!.reference
                                 .child("users")
                                 .child(uid!!)
@@ -77,7 +79,8 @@ class SetupProfileActivity : AppCompatActivity() {
                         val uid = auth!!.uid
                         val phone = auth!!.currentUser!!.phoneNumber
                         val name: String = binding!!.nameBox.text.toString()
-                        val user = User(uid, name, phone, "No Image")
+                        val bio: String = binding!!.bioBox.text.toString()
+                        val user = User(uid, name, bio, phone, "No Image")
                         database!!.reference
                             .child("users")
                             .child(uid!!)

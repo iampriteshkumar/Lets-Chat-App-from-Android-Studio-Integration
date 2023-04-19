@@ -13,8 +13,8 @@
     tools:context=".OTPActivity">
 
     <ImageView
-        android:layout_width="250dp"
-        android:layout_height="250dp"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
         android:layout_marginTop="10dp"
         android:scaleType="centerCrop"
         android:src="@drawable/getotp" />
@@ -32,7 +32,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp"
+        android:layout_margin="4dp"
         android:text="Enter the OTP code to Verify your Phone Number"
         android:textAlignment="center"
         android:textColor="#656565"
@@ -44,7 +44,7 @@
         android:layout_height="wrap_content"
         app:cardBackgroundColor="@color/otpBack"
         app:cardCornerRadius="8dp"
-        app:cardElevation="15dp"
+        app:cardElevation="10dp"
         app:cardUseCompatPadding="true">
 
         <LinearLayout

@@ -15,7 +15,7 @@
         android:padding="10dp"
         android:textColor="#FFB74D"
         android:textSize="16sp"
-        android:textStyle="bold|normal"
+        android:textStyle="normal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
@@ -26,7 +26,7 @@
         android:padding="10dp"
         android:textColor="#FFB74D"
         android:textSize="16sp"
-        android:textStyle="bold|normal"
+        android:textStyle="normal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
@@ -37,7 +37,7 @@
         android:padding="10dp"
         android:textColor="#FFB74D"
         android:textSize="16sp"
-        android:textStyle="bold|normal"
+        android:textStyle="normal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
