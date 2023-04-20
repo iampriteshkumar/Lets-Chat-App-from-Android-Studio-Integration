@@ -84,6 +84,8 @@ class ChatActivity : AppCompatActivity() {
 
         binding!!.recyclerView.layoutManager = LinearLayoutManager(this@ChatActivity)
         binding!!.recyclerView.adapter = adapter
+
+
         database!!.reference.child("chats")
             .child(senderRoom!!)
             .child("message")
@@ -95,6 +97,9 @@ class ChatActivity : AppCompatActivity() {
                         message!!.messageId = snapshot1.key
                         messages!!.add(message)
 
+                    }
+                    messages?.let {
+                        binding!!.recyclerView.scrollToPosition(it.size -1)
                     }
                     adapter!!.notifyDataSetChanged()
                 }

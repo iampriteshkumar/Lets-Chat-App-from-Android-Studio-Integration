@@ -3,6 +3,7 @@ package com.droidappproject.letschat
 import android.app.ProgressDialog
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import androidx.recyclerview.widget.GridLayoutManager
 import com.droidappproject.letschat.adapter.UserAdapter
 import com.droidappproject.letschat.databinding.ActivityMainBinding
@@ -50,6 +51,7 @@ class MainActivity : AppCompatActivity() {
             override fun onDataChange(snapshot: DataSnapshot) {
                 users!!.clear()
                 for (snapshot1 in snapshot.children) {
+                    Log.d("USER_DATA", "onDataChange: $snapshot1")
                     val user: User? = snapshot1.getValue(User::class.java)
                     if (!user!!.uid.equals(FirebaseAuth.getInstance().uid)) users!!.add(user)
                 }

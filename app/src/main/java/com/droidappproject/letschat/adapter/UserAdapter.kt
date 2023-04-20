@@ -2,6 +2,7 @@ package com.droidappproject.letschat.adapter
 
 import android.content.Context
 import android.content.Intent
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -30,7 +31,12 @@ class UserAdapter(var context:Context, var userList: ArrayList<User>):
         val user = userList[position]
         holder.binding.username.text = user.name
         holder.binding.bio.text = user.bio
-        Glide.with(context).load(user.profileImage)
+
+        Log.d("ImageUrl", "onBindViewHolder: ImageUrl: ${user.profileImage}")
+        Glide
+            .with(context)
+            .load(user.profileImage)
+            .centerCrop()
             .placeholder(R.drawable.ic_avatar)
             .into(holder.binding.profile)
         holder.itemView.setOnClickListener{

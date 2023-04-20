@@ -5,6 +5,7 @@ import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import com.droidappproject.letschat.databinding.ActivitySetupProfileBinding
 import com.droidappproject.letschat.model.User
 import com.google.firebase.auth.FirebaseAuth
@@ -56,13 +57,20 @@ class SetupProfileActivity : AppCompatActivity() {
                     .child(auth!!.uid!!)
                 reference.putFile(selectedImage!!).addOnCompleteListener { task ->
                     if (task.isSuccessful) {
+
+                        Log.d("PROFILE_DATA", "onCreate: ${task.result} ")
+
+                        task.result
                         reference.downloadUrl.addOnCompleteListener { uri ->
-                            val imageUrl = uri.toString()
+                            val imageUrl = uri.result
+                            Log.d("PROFILE_DATA", " $imageUrl ")
                             val uid = auth!!.uid
+
+                            Log.d("PROFILE_DATA", "onCreate: $imageUrl ")
                             val phone = auth!!.currentUser!!.phoneNumber
                             val name: String = binding!!.nameBox.text.toString()
                             val bio: String = binding!!.bioBox.text.toString()
-                            val user = User(uid, name, bio, phone, imageUrl)
+                            val user = User(uid, name, bio, phone, imageUrl.toString())
                             database!!.reference
                                 .child("users")
                                 .child(uid!!)
