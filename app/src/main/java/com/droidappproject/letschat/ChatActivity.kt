@@ -9,6 +9,7 @@ import android.text.Editable
 import android.text.TextWatcher
 import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.droidappproject.letschat.adapter.MessagesAdapter
 import com.droidappproject.letschat.databinding.ActivityChatBinding
@@ -34,6 +35,7 @@ class ChatActivity : AppCompatActivity() {
     var dialog: ProgressDialog? = null
     var senderUid: String? = null
     var receiverUid: String? = null
+    lateinit var recyclerView: RecyclerView
 
 
 
@@ -165,6 +167,25 @@ class ChatActivity : AppCompatActivity() {
 
         })
         supportActionBar?.setDisplayShowTitleEnabled(false)
+
+        recyclerView = binding!!.recyclerView
+        recyclerView.layoutManager = LinearLayoutManager(this@ChatActivity)
+        recyclerView.adapter = adapter
+
+        recyclerView.addOnLayoutChangeListener { v, left, top, right, bottom, oldLeft, oldTop, oldRight, oldBottom ->
+            if (bottom < oldBottom) {
+                recyclerView.post {
+                    val lastAdapterItem = adapter?.itemCount?.minus(1) ?: 0
+                    var recyclerViewPositionOffset = -1000000
+                    val bottomView = recyclerView.layoutManager?.findViewByPosition(lastAdapterItem)
+                    if (bottomView != null) {
+                        recyclerViewPositionOffset = 0 - bottomView.height
+                    }
+                    (recyclerView.layoutManager as LinearLayoutManager)?.scrollToPositionWithOffset(lastAdapterItem, recyclerViewPositionOffset)
+                }
+            }
+        }
+
     }
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
